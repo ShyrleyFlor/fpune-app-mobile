@@ -18,10 +18,14 @@ import {
 //import ListalumnosComponents from "./src/components/ListaAlumnos";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Componente01 from "./src/simulacro_parcial/Componente01";
-import Props02 from "./src/simulacro_parcial/Props02";
-import Axios03 from "./src/simulacro_parcial/Axios03";
-import AsyncStorage04 from "./src/simulacro_parcial/AsyncStorage04";
+//import Componente01 from "./src/simulacro_parcial/Componente01";
+//import Props02 from "./src/simulacro_parcial/Props02";
+//import Axios03 from "./src/simulacro_parcial/Axios03";
+//import AsyncStorage04 from "./src/simulacro_parcial/AsyncStorage04";
+import ComponenteParcial from "./src/primera-parcial/ComponenteParcial";
+import PropsParcial from "./src/primera-parcial/PropsParcial";
+import AxiosParcial from "./src/primera-parcial/AxiosParcial";
+import AsyncStorageParcial from "./src/primera-parcial/AsyncStorageParcial";
 
 const Stack = createNativeStackNavigator();
 
@@ -43,11 +47,11 @@ const App = () => {
      */}
 
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Componente01">
-          <Stack.Screen name="Componente01" component={Componente01} />
-          <Stack.Screen name="Props02" component={Props02} />
-          <Stack.Screen name="Axios03" component={Axios03} />
-          <Stack.Screen name="AsyncStorage04" component={AsyncStorage04} />
+        <Stack.Navigator initialRouteName="ComponenteParcial">
+          <Stack.Screen name="ComponenteParcial" component={ComponenteParcial} />
+          <Stack.Screen name="PropsParcial" component={PropsParcial} />
+          <Stack.Screen name="AxiosParcial" component={AxiosParcial} />
+          <Stack.Screen name="AsyncStorageParcial" component={AsyncStorageParcial} />
 
 
         </Stack.Navigator>
